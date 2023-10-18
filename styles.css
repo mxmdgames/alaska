@@ -1,0 +1,89 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+/* Top Navigation Bar Styles */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.top-nav .logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Large Image of Hikers Styles */
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.contact-button {
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: white;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 50%;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Add additional styles for the button on hover if desired */
+.contact-button:hover {
+    background-color: #000;
+    color: white;
+}
+
+/* Grid Layout for Smaller Images Styles */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0px;
+    padding: 20px;
+}
+
+.image {
+    position: relative;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.image img:hover {
+    transform: scale(1.3);
+}
